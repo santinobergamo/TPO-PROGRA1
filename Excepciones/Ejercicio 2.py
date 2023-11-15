@@ -1,6 +1,3 @@
-cadena_1 = ""
-cadena_2 = ""
-letra = "abcdefghijklmnñopqrstuvwxyz"
 def cadena (cadena_1, cadena_2):
     try:
         cadena_1 = float(input("Ingrese un numero real"))
@@ -9,6 +6,11 @@ def cadena (cadena_1, cadena_2):
         print(-1)
     resultado = cadena_1 + cadena_2
     return resultado
-        
-print(cadena (cadena_1, cadena_2))
+
+def main():
+    cadena_1 = ""
+    cadena_2 = ""
+    letra = "abcdefghijklmnñopqrstuvwxyz"
+    print(cadena (cadena_1, cadena_2))
+main()
 
