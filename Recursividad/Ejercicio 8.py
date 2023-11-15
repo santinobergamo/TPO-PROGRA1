@@ -1,7 +1,3 @@
-# Recursividad
-
-# Ejercicio 8
-
 def ordenar_seleccion_recursiva(lista):
     
     if len(lista) <= 1:                                                  # Caso base: si la lista tiene 0 o 1 elemento, ya está ordenada
@@ -15,8 +11,10 @@ def ordenar_seleccion_recursiva(lista):
 
 
 # Ejemplo del programa
-lista_numeros = [5, 2, 8, 1, 3]
-lista_ordenada = ordenar_seleccion_recursiva(lista_numeros)
-print("Lista original:", lista_numeros)
-print("Lista ordenada:", lista_ordenada)
-print("hola")
+def main():
+    lista_numeros = [5, 2, 8, 1, 3]
+    lista_ordenada = ordenar_seleccion_recursiva(lista_numeros)
+    print("Lista original:", lista_numeros)
+    print("Lista ordenada:", lista_ordenada)
+    print("hola")
+main()
