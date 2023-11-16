@@ -16,5 +16,4 @@ def main():
     lista_ordenada = ordenar_seleccion_recursiva(lista_numeros)
     print("Lista original:", lista_numeros)
     print("Lista ordenada:", lista_ordenada)
-    print("hola")
 main()
