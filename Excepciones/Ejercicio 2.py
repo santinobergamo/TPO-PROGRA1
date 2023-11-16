@@ -10,7 +10,6 @@ def cadena (cadena_1, cadena_2):
 def main():
     cadena_1 = ""
     cadena_2 = ""
-    letra = "abcdefghijklmnñopqrstuvwxyz"
     print(cadena (cadena_1, cadena_2))
 main()
 
