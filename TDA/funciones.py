@@ -1,4 +1,4 @@
-def inicializarPila():
+def inicializar_pila():
     pila= []
     return pila
 
@@ -8,11 +8,11 @@ def apilar(pila, dato):
 def desapilar(pila):
     pila.pop()
 
-def pilaVacia(pila):
+def pila_vacia(pila):
     return len(pila)== 0
 
 def tope(pila):
     return pila[-1]
 
-def invertirOrden(pila):
+def invertir_orden(pila):
     return pila[::-1]
