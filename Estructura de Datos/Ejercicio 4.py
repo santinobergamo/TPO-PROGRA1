@@ -9,5 +9,5 @@ def main():
     valor_2_2 = int(input("Ingrese el segundo valor de la ficha 2: "))
     ficha_2 = (valor_2_1, valor_2_2)
     resultado = domino(ficha_1, ficha_2)
-    print(resultado)
+    print(resultado )
 main()
