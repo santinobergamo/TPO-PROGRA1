@@ -45,7 +45,7 @@ def main():
         arch1.readline()
         calcular_vendidos(arch1)
     except FileNotFoundError:
-        print("ERROR archivo no encontrado.")
+        print("ERROR archivo no encontrado. ")
     else:
         arch1.close()
 main()
