@@ -29,12 +29,23 @@ def calcular_vendidos(arch1):
         print(f"Stock: {tupla[0]}\nProducto: {tupla[1]}\n")
 
 def main():
-    arch29 = open("dairy_dataset.csv","r")
-    arch29.readline()
-    stock(arch29)
-    arch29.close()
-    arch1 = open("dairy_dataset.csv","r")
-    arch1.readline()
-    calcular_vendidos(arch1)
-    arch1.close()
+    nombrearch = input("Ingrese el nombre del archivo seguido del .csv: ")
+    try:
+        arch29 = open(nombrearch,"r")
+        arch29.readline()
+        stock(arch29)
+        arch29.close()
+    except FileNotFoundError:
+        print("ERROR archivo no encontrado. ")
+    else:
+        arch29.close()
+    nombrearch2 = input("Ingrese el nombre del archivo seguido del .csv: ")
+    try:
+        arch1 = open(nombrearch2,"r")
+        arch1.readline()
+        calcular_vendidos(arch1)
+    except FileNotFoundError:
+        print("ERROR archivo no encontrado.")
+    else:
+        arch1.close()
 main()
