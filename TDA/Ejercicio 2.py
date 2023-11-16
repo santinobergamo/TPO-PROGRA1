@@ -1,33 +1,21 @@
-def inicializarPila():
-    pila= []
-    return pila
+from funciones import *
 
-def apilar(pila, dato):
-    pila.append(dato)
-    
-def desapilar(pila):
-    pila.pop()
+def invertir_orden_pila(pila_original):
+    pila_invertida = inicializar_pila()
+    while not pila_vacia(pila_original):
+        apilar(pila_invertida, tope(pila_original))
+        desapilar(pila_original)
+    return pila_invertida
 
-def pilaVacia(pila):
-    return len(pila)== 0
-
-def tope(pila):
-    return pila[-1]
-
-def invertirOrden(pila):
-    return pila[::-1]
-
-
-
-pila= inicializarPila()
-apilar(pila, 1)
-apilar(pila, 2)
-apilar(pila, 3)
-
-
-print("Pila: ",  pila)
-print("Pila invertida: ", invertirOrden(pila))
-
+def main():
+    pila = inicializar_pila()
+    apilar(pila,17)
+    apilar(pila,9)
+    apilar(pila,5)
+    apilar(pila,24)
+    pila_resultante = invertir_orden_pila(pila)
+    print(pila_resultante)
+main()
 
 
 
