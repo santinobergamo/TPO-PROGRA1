@@ -4,4 +4,4 @@ def suma(N):
     else:
         return N + suma(N-1)
 resultado = suma(6)
-print(resultado)
+print(resultado )
