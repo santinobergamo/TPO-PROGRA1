@@ -19,11 +19,6 @@ def invertirOrden(pila):
 
 
 
-
-
-
-
-
 pila= inicializarPila()
 apilar(pila, 1)
 apilar(pila, 2)
