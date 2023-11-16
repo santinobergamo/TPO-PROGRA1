@@ -29,6 +29,9 @@ def eliminar_comentarios_archivos(input_file, output_file):
         archivo_salida.write(contenido_sin_comentarios)
 
 
-archivo_entrada = 'Archivos/programa_ejemplo.py'
-archivo_salida = 'Archivos/programa_ejemplo_sin_comentarios.py'
-eliminar_comentarios_archivos(archivo_entrada, archivo_salida)
+def main():
+
+    archivo_entrada = 'Archivos/programa_ejemplo.py'
+    archivo_salida = 'Archivos/programa_ejemplo_sin_comentarios.py'
+    eliminar_comentarios_archivos(archivo_entrada, archivo_salida)
+main()
