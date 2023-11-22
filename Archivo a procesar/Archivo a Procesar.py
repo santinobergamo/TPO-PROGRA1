@@ -1,5 +1,6 @@
 """ Identifica los tres productos lácteos más vendidos basados en la cantidad total vendida. """
 """ Informe los productos que actualmente tienen una cantidad en stock por debajo del umbral mínimo, mostrando stock actual y umbral minimo. """
+from llavebygurise import *
 import csv
 
 
